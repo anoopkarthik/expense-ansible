@@ -47,7 +47,7 @@
       dest: /etc/systemd/system/backend.service
 
   - name: ansible to install pymsql
-    ansible.builtin.service:
+    ansible.builtin.package:
       name:
        pymysql
       executable: pip3.9
